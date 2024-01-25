@@ -44,7 +44,7 @@ html {
   font-size: 2rem;
   transition: 0.3s;
 }
-.pagina-ppal :hover {
+.pagina-ppal p:hover {
   color: rgb(172, 172, 172);
   font-size: 3rem;
 }
@@ -75,9 +75,22 @@ html {
   transition: all;
 }
 .experiencia .exp1 {
-  transition-delay: 1s;
-  display: none;
-  color: red;
+  transition-delay: 1.2s;
+}
+.experiencia .exp2 {
+  transition-delay: 1.4s;
+}
+.experiencia .exp3 {
+  transition-delay: 1.6s;
+}
+.experiencia .exp4 {
+  transition-delay: 1.8s;
+}
+.experiencia .exp5 {
+  transition-delay: 2s;
+}
+.experiencia .exp6 {
+  transition-delay: 2.2s;
 }
 
 .ancho-carrousel {
@@ -86,7 +99,12 @@ html {
 
 .titulo-pagina {
   font-family: "Josefin", sans-serif;
+  color: rgb(24, 13, 70);
   padding: 1rem;
+}
+.titulo-pagina:hover {
+  transform: rotate(90);
+  color: rgb(145, 0, 0);
 }
 
 .analisis-argentina {
@@ -94,31 +112,27 @@ html {
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  overflow: scroll;
 }
-
-.grilla {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1rem;
+.analisis-argentina .imagen {
+  margin: auto;
+  align-items: center;
+  grid-column: 1/6;
+  grid-row: 1/6;
 }
-
-.imagen {
-  grid-column: 1/3;
-  grid-row: 1/4;
-}
-
-.texto {
-  grid-column: 2/3;
-  grid-row: 2/4;
+.analisis-argentina .texto-psi-arg {
+  grid-column: 3/6;
+  grid-row: 4/6;
   background-color: rgb(255, 255, 255);
   padding: 1rem;
   align-self: center;
 }
 
-.foto {
-  border-style: groove;
+.grilla {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 footer {
@@ -128,6 +142,7 @@ footer {
   width: 100%;
   height: 48px;
   text-align: center;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 @media (max-width: 480px) {
